@@ -24,6 +24,7 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             padding: 20px;
             width: 320px;
+            display: inline-block;
         }
         .title {
             text-align: center;
@@ -92,9 +93,20 @@
             background: #e53e3e;
             transform: scale(0.95);
         }
+        .version {
+            margin-top: 10px;
+            text-align: center;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 8px;
+            min-width: 320px;
+        }
     </style>
 </head>
 <body>
+
+
+    <div style="display: block;">
     <div class="calculator">
         <div class="title">計算器</div>
         <input type="text" id="display" class="display" readonly>
@@ -122,6 +134,9 @@
             <button class="equal" onclick="calc.calculate()">=</button>
         </div>
     </div>
+    <div class="version">版本v1.0</div>
+    </div>
+
 
     <script>
         const calc = {
